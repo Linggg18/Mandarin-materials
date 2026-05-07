@@ -2,13 +2,46 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>華語備課助手</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
+
+<div class="container">
+
+<div class="left">
 
 <h1>華語備課助手</h1>
 
+<p class="subtitle">
+TBCL × 華語教材備課系統
+</p>
+
+<textarea id="inputText" placeholder="請貼上教材內容"></textarea>
+
+<button onclick="analyzeText()">
+開始分析
+</button>
+
+</div>
+
+<div class="right">
+
+<h2>分析結果</h2>
+
+<div id="result">
+
+<p>請先輸入教材。</p>
+
+</div>
+
+</div>
+
+</div>
+
 <script src="/static/app.js"></script>
+
 </body>
 </html>
